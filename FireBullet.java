@@ -50,7 +50,7 @@ public class FireBullet implements Listener {
 				world.playSound(eyeloc, Sound.BLOCK_GILDED_BLACKSTONE_BREAK,1,1);
 				
 				//setting bullet attributes
-				bullet.setDamage(10);
+				bullet.setDamage(5);
 				bullet.setShooter(p);
 				bullet.setFireTicks(500);
 				bullet.setShotFromCrossbow(true);
