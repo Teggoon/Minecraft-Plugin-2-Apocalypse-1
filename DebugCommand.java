@@ -6,11 +6,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-public class HelloCommand implements CommandExecutor {
+public class DebugCommand implements CommandExecutor {
 
 	private static Apocalypse1 plugin;
 	
-	public HelloCommand(Apocalypse1 plugin) {
+	public DebugCommand(Apocalypse1 plugin) {
 		this.plugin = plugin;
 		plugin.getCommand("hello").setExecutor(this);
 	}
@@ -25,6 +25,17 @@ public class HelloCommand implements CommandExecutor {
 				//
 				Player p = (Player) sender;
 				p.sendMessage("Hello there!");
+				
+				return true;
+			} 
+		}
+		// check if command is hello
+		if (label.equalsIgnoreCase("ec")) {
+			// check if command came from player, not console
+			if (sender instanceof Player) {
+				//
+				Player p = (Player) sender;
+				p.sendMessage("Entities in the world: " + p.getWorld().getEntities().size());
 				
 				return true;
 			} 

@@ -12,9 +12,10 @@ public class Apocalypse1 extends JavaPlugin {
 		// Crossbow Gun elements
 		new RemoveBullet(this);
 		new FireBullet(this);
-		new HelloCommand(this);
-		new SpawnMonsters(this);
-		new GivePlayerGun(this);
+		new DebugCommand(this);
+		new DespawnMonsters(this);
+		new PlayerSpawnSetup(this);
 		new EnvironmentSetup(this);
+		new EnhanceMonster(this);
 	}
 }

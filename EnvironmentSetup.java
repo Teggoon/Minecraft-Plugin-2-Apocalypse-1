@@ -26,7 +26,7 @@ public class EnvironmentSetup implements Listener{
 		Bukkit.getPluginManager().registerEvents(this,plugin);
 	}
 
-
+/*
 	//Give a player blindness upon respawning
 	@EventHandler
 	public void respawnCheck(PlayerRespawnEvent event) {
@@ -43,6 +43,7 @@ public class EnvironmentSetup implements Listener{
 		PotionEffect blind = new PotionEffect(PotionEffectType.BLINDNESS, 120000, 0, true);
 		p.addPotionEffect(blind);
 	}
+	*/
 
 	// handle environment stuff
 	@EventHandler
