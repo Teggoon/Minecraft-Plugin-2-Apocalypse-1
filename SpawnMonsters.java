@@ -70,7 +70,7 @@ public class SpawnMonsters implements Listener {
 		PotionEffect inviz = new PotionEffect(PotionEffectType.INVISIBILITY, 30000, 1, true);
 		mob.addPotionEffect(inviz);
 		
-		/*
+		
 		List<Player> playerList = event.getEntity().getWorld().getPlayers();
 		int minD = Integer.MAX_VALUE;
 		int closest = -1;
@@ -92,10 +92,7 @@ public class SpawnMonsters implements Listener {
 			Mob samemob = (Mob) mob;
 			samemob.setTarget(playerList.get(closest));
 		}
-		if (closest != -1 && Math.abs(playerList.get(closest).getLocation().getY() - mobY) > 26) {
-			//mob.remove();
-		}
-		*/
+		
 		
 		
 		if (enttype == EntityType.SKELETON || enttype == EntityType.STRAY ) 
@@ -144,9 +141,6 @@ public class SpawnMonsters implements Listener {
 		double y = p.getLocation().getY();
 		double z = p.getLocation().getZ();
 		
-		if (w.getEntities().size() > 100) {
-			//w.getEntities().get(0).remove();
-		}
 		
 		// spawning a wave of monsters
 		double setNum = Math.random();
