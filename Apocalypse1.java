@@ -15,5 +15,6 @@ public class Apocalypse1 extends JavaPlugin {
 		new HelloCommand(this);
 		new SpawnMonsters(this);
 		new GivePlayerGun(this);
+		new EnvironmentSetup(this);
 	}
 }

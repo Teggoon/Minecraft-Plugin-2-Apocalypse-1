@@ -22,7 +22,7 @@ public class GivePlayerGun implements Listener {
 	@EventHandler
 	public void deathCheck(PlayerRespawnEvent event) {
 		Player p = (Player) event.getPlayer();
-		p.getWorld().dropItemNaturally(p.getLocation(),new ItemStack(Material.CROSSBOW));
+		p.getWorld().dropItemNaturally(event.getRespawnLocation(),new ItemStack(Material.CROSSBOW));
 	}
 
 	//Give a player a crossbow upno first joining

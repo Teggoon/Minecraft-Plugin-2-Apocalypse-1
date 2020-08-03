@@ -56,7 +56,7 @@ public class SpawnMonsters implements Listener {
 	 * returns a spawn location for a monster based on a Player object
 	 * */
 	public Location spawnLocation(Player p, double x, double y, double z) {
-		double angle = Math.random();
+		double angle = Math.random() * 3;
 		double newx = x + Math.cos(angle) * (8 + Math.random() * 20);
 		double newz = z + Math.sin(angle) * (8 + Math.random() * 20);
 		return new Location(p.getWorld(), newx, y + 5, newz);
@@ -67,7 +67,7 @@ public class SpawnMonsters implements Listener {
 		EntityType enttype = event.getEntityType();
 		
 		LivingEntity mob = event.getEntity();
-		PotionEffect inviz = new PotionEffect(PotionEffectType.INVISIBILITY, 30000, 1, true);
+		PotionEffect inviz = new PotionEffect(PotionEffectType.INVISIBILITY, 30000, 1, true, true);
 		mob.addPotionEffect(inviz);
 		
 		
@@ -136,7 +136,6 @@ public class SpawnMonsters implements Listener {
 	public void spawnMonsters(PlayerMoveEvent event) {
 		Player p = event.getPlayer();
 		World w = p.getWorld();
-		w.setTime(15000);
 		double x = p.getLocation().getX();
 		double y = p.getLocation().getY();
 		double z = p.getLocation().getZ();
