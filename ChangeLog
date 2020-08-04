@@ -1,0 +1,20 @@
+**** Change Log ****
+
+Name and email are omitted since they are all by me, Haocheng Li / Daniel, and my email is <daniel.hc.li@gmail.com>
+
+2020-8-1
+  - Imported crossbow gun from my other plugin, Crosbow Gun, and also added basic mob spawning 
+  - Added mobs like blaze, elder guardian, dragon, phantoms, and other mobs to the ones being spawn regularly in the environment
+  - Refactored code, splitting different functionalities into different classes
+  
+2020-8-2
+  - Changed mob spawning mechanism
+  - Added environment effects like permanight, thundering, ambient Nether sound, lightnings, removed rain
+  - Added player regen effect upon spawning
+  - Added special mob loot
+  
+Version log:
+  0.9 - Added guns
+  0.9.1 - Added dangerous mob spawns
+  0.9.2 - Added Environment effects
+  0.9.3 - Added Special Mob Loot
