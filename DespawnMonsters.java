@@ -22,43 +22,22 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-
+/**
+ * Class that handles despawning monsters for lag.
+ * Does not work as of 2020-8-3
+ * */
 public class DespawnMonsters implements Listener {
 	
+	// Variable to connect back to main class with
 	private static Apocalypse1 plugin;
 	
-	public  static final int NUM_OF_MOBS_PER_WAVE = 5;
-	
-	public static final int SPAWN_RANGE_FROM_PLAYER = 20;
-	
-	public static final EntityType[] MOB_CHOICES = {
-			EntityType.PHANTOM,
-			EntityType.ZOMBIE,
-			EntityType.HUSK,
-			EntityType.SKELETON,
-			EntityType.STRAY,
-			EntityType.CREEPER,
-			EntityType.CAVE_SPIDER,
-			EntityType.BLAZE,
-			EntityType.GHAST,
-			EntityType.RAVAGER,
-			};
-	
+	/**
+	 * Constructor
+	 * @param parent class object
+	 * */
 	public DespawnMonsters(Apocalypse1 plugin) {
 		this.plugin = plugin;
 		Bukkit.getPluginManager().registerEvents(this,plugin);
-	}
-	
-	/**
-	 * Helper method:
-	 * 
-	 * returns a spawn location for a monster based on a Player object
-	 * */
-	public Location spawnLocation(Player p, double x, double y, double z) {
-		double angle = Math.random() * 3;
-		double newx = x + Math.cos(angle) * (8 + Math.random() * SPAWN_RANGE_FROM_PLAYER);
-		double newz = z + Math.sin(angle) * (8 + Math.random() * SPAWN_RANGE_FROM_PLAYER);
-		return new Location(p.getWorld(), newx, y + 5, newz);
 	}
 	
 	

@@ -17,40 +17,35 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+/**
+ * Class that modifies the environment
+ * @author Haocheng Li / Daniel
+ * @version 0.9.3
+ * @since 2020-8-3
+ * */
 public class EnvironmentSetup implements Listener{
 	
 	private static Apocalypse1 plugin;
 	
+	/**
+	 * Constructor
+	 * @param parent class object
+	 * */
 	public EnvironmentSetup(Apocalypse1 plugin) {
 		this.plugin = plugin;
 		Bukkit.getPluginManager().registerEvents(this,plugin);
 	}
-
-/*
-	//Give a player blindness upon respawning
-	@EventHandler
-	public void respawnCheck(PlayerRespawnEvent event) {
-		Player p = (Player) event.getPlayer();
-		PotionEffect blind = new PotionEffect(PotionEffectType.BLINDNESS, 120000, 0, true);
-		p.addPotionEffect(blind);
-		
-	}
-
-	//Give a player blindness upon joining
-	@EventHandler
-	public void joinCheck(PlayerJoinEvent event) {
-		Player p = (Player) event.getPlayer();
-		PotionEffect blind = new PotionEffect(PotionEffectType.BLINDNESS, 120000, 0, true);
-		p.addPotionEffect(blind);
-	}
-	*/
 
 	// handle environment stuff
 	@EventHandler
 	public void environment(PlayerMoveEvent event) {
 		Player p = (Player) event.getPlayer();
 		World w = p.getWorld();
+		
+		// set permanight
 		w.setTime(15000);
+		
+		// remove all storm
 		w.setStorm(false);
 
 		// strike lightning
@@ -62,6 +57,7 @@ public class EnvironmentSetup implements Listener{
 			w.strikeLightning(new Location(w, newx, p.getLocation().getY(), newz));
 		}
 		
+		// playing nether ambient sound and thunder sound
 		if (setNum < 0.05) {
 			w.setThunderDuration(20);
 			w.playSound(p.getLocation(), Sound.AMBIENT_NETHER_WASTES_LOOP, 12, 1);

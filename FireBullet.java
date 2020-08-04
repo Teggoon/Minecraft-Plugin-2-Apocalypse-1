@@ -13,15 +13,27 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.util.Vector;
 
+/**
+ * Class that fires each bullet
+ * */
 public class FireBullet implements Listener {
 
+	// variable used to connect back to main class
 	private static Apocalypse1 plugin;
 	
+	/**
+	 * Constructor
+	 * @param parent class object
+	 * */
 	public FireBullet(Apocalypse1 plugin) {
 		this.plugin = plugin;
 		Bukkit.getPluginManager().registerEvents(this,plugin);
 	}
 	
+	/*
+	 * Handles the shooting of a bullet upon player action
+	 * @param: Player mouse clicking event
+	 * */
 	@EventHandler
 	public void fireBullet(PlayerInteractEvent event) {
 
