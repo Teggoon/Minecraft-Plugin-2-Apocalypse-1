@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 /***
  * Helper class that sets each hostile monster's loot
  * @author Haocheng Li / Daniel
- * @version 0.9.3	
+ * @version 0.9.4	
  * @since 2020-8-3 
  */
 public class SetMonsterLoot {
@@ -25,7 +25,8 @@ public class SetMonsterLoot {
 		Material.JUNGLE_LOG,
 		Material.IRON_INGOT,
 		Material.COOKED_BEEF,
-		Material.COAL
+		Material.COAL,
+		Material.DIAMOND
 	};
 	
 	/**
