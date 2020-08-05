@@ -2,6 +2,7 @@ package me.Daniel.Apocalypse1Plugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.Daniel.Apocalypse1Plugin.DebugCommands.DebugCommand;
 import me.Daniel.Apocalypse1Plugin.Environment.EnvironmentSetup;
 import me.Daniel.Apocalypse1Plugin.Monsters.DespawnMonsters;
 import me.Daniel.Apocalypse1Plugin.Monsters.EnhanceMonster;

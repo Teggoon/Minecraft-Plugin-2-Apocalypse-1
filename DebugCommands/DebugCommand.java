@@ -1,9 +1,11 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.DebugCommands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 
 /**
  * Class that helps do the basic debug commands
