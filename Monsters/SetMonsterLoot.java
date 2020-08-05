@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Monsters;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

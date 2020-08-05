@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Player;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Arrow;
@@ -7,6 +7,8 @@ import org.bukkit.entity.Projectile;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.ProjectileHitEvent;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 
 /**
  * Class that handles the removal of a bullet when the bullet collides with something

@@ -2,6 +2,13 @@ package me.Daniel.Apocalypse1Plugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.Daniel.Apocalypse1Plugin.Environment.EnvironmentSetup;
+import me.Daniel.Apocalypse1Plugin.Monsters.DespawnMonsters;
+import me.Daniel.Apocalypse1Plugin.Monsters.EnhanceMonster;
+import me.Daniel.Apocalypse1Plugin.Player.FireBullet;
+import me.Daniel.Apocalypse1Plugin.Player.PlayerSpawnSetup;
+import me.Daniel.Apocalypse1Plugin.Player.RemoveBullet;
+
 /**
  * Parent class that extends Java Plugin and brings all the different classes' functionalities together
  * @author Haocheng Li / Daniel

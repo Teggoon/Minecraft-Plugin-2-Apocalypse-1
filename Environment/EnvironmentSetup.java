@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Environment;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -16,6 +16,8 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 
 /**
  * Class that modifies the environment

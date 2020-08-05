@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Monsters;
 
 import java.util.List;
 
@@ -17,6 +17,8 @@ import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 /**
  * Class handling the enhancement of spawned monsters
  * @author Haocheng Li/Daniel

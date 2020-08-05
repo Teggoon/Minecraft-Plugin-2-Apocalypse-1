@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Player;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -10,6 +10,8 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 /**
  * Class that sets up the player upon spawning or joining the server
  * @author Haocheng Li / Daniel

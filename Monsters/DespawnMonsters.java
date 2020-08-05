@@ -1,4 +1,4 @@
-package me.Daniel.Apocalypse1Plugin;
+package me.Daniel.Apocalypse1Plugin.Monsters;
 
 import java.util.Iterator;
 import java.util.List;
@@ -21,6 +21,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import me.Daniel.Apocalypse1Plugin.Apocalypse1;
 
 /**
  * Class that handles despawning monsters for lag.
